@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func Test_toplivo(t *testing.T) {
+func Test_fuel(t *testing.T) {
 
 	tests := []struct {
 		name string
@@ -20,7 +20,7 @@ func Test_toplivo(t *testing.T) {
 	for _, tt := range tests {
 		got := fuel(tt.fuelCons, tt.fuelVol)
 		if got != tt.want{
-			t.Error("for toplivo test:",tt.name,"got:",got,"want:",tt.want)
+			t.Error("for fuel test:",tt.name,"got:",got,"want:",tt.want)
 		}
 
 	}
