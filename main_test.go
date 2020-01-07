@@ -8,8 +8,8 @@ func Test_fuel(t *testing.T) {
 
 	tests := []struct {
 		name string
-		fuelCons int
-		fuelVol int
+		fuelConsumption int
+		fuelVolume int
 		want int
 	}{
 		// TODO: Add test cases.
@@ -18,7 +18,7 @@ func Test_fuel(t *testing.T) {
 		{"50 km", 10,5,50},
 	}
 	for _, tt := range tests {
-		got := fuel(tt.fuelCons, tt.fuelVol)
+		got := distance(tt.fuelConsumption, tt.fuelVolume)
 		if got != tt.want{
 			t.Error("for fuel test:",tt.name,"got:",got,"want:",tt.want)
 		}
